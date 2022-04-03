@@ -1,30 +1,39 @@
-import React,{ useState } from 'react'
-import './App.css';
+import React, { useState } from 'react'
+import './App.css'; 
+//import RulesHook from "./components/RulesHook";
+import  UseStateArray from "./components/UseStateArray";
 const App = () => {
 
-   //console.log(useState('prashna prasai'));
-    //let myFirstVal =useState('prasai')[0];
-    //console.log(myFirstVal);
-
-    //var val="prashna prasai";
-    const[myName, setMyName]=useState('prashna prasai');
+  
+   // const[myName, setMyName]=useState('Prashna ');
 
 
-    const ChangeName= () => { 
+    //const ChangeName= () => { 
+      //let Val=myName;
+      //if(Val==='Prashna'){
 
-      setMyName("Karishma Budhathoki")
-    }
+        ///setMyName('Karishma Budhathoki')
 
-  console.log(myName);
+     // }else{
+
+        //setMyName('Prashna')
+
+     // }
+
+      
+   // }
+
+  //console.log(myName);
   return(   
     <div>
-<h1> { myName }</h1>
-<button className='btn' onClick={ChangeName}>Click me plz</button>
+{/*<h1> { myName }</h1>
+
+  <button className='btn' onClick={ChangeName}>Click me plz</button>*/}
     
     
     
-    
-    
+  {/*<RulesHook/>*/}
+  <UseStateArray />
     
     </div>
   )
